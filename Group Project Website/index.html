@@ -27,6 +27,39 @@
 
 <body>
 
+  <!-- START HEADER -->
+  <div id="header">
+    <div class="container">
+
+      <!-- start primary navigation menu -->
+      <div class="header-right">
+
+        <div id="primary-nav" class="header-right">
+
+          <ul class="sf-menu">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li>
+              <a href="#_">More info.</a>
+              <ul>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="features.html">More info</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end nav -->
+
+      <!-- LOGO -->
+      <a href="#" id="logo"><img src="images/icons/logo.png" height="30" width="23.16" border="0" alt="Group project 1 application homepage" /></a>
+      <br class="clear" />
+
+    </div>
+
+  </div>
+  <!-- END HEADER -->
+
   <div id="skit-controller">
 
     <div id="public-landing-page" class="
@@ -130,155 +163,204 @@
           </div>
         </div>
       </section>
-      <footer>
+
+      <!-- start bottom content -->
+      <div id="bottom-content">
+
+        <!-- start container -->
         <div class="container">
-          <div class="footer-nav col-xs-12 col-sm-8 pull-right text-right">
+
+          <h2 class="slide-break">Features</span><br/><span class="wb-small"> - track your health</span></h2>
+
+          <ul id="features">
+
+            <li class="icon cd"><strong>Ready for All Lifestyles</strong> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.</li>
+
+            <li class="right icon refresh"><strong>Feature info 2</strong> - The app.....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat..</li>
+
+            <li class="icon heart"><strong>Feature info 3</strong> - With .... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo consequat.!</li>
+
+            <li class="right icon document"><strong>Feature info 4 </strong> - Check out......Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.</li>
+
+            <li class="icon picture"><strong>Feature info 5</strong> - Also Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</li>
+
+            <li class="right icon letter"><strong>Feature info 6</strong> -Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</li>
+
+            <li class="icon info"><strong>Feature info 7 </strong> -Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</li>
+
+            <li class="right icon star"><strong>Feature info 8</strong> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</li>
+
+          </ul>
+
+          <br class="clear" />
+
+
+          <!-- start app store button area -->
+          <div id="app-store">
+
+            <a id="store-button" href="#_"><img src="images/app-store.png" alt="App Store" /></a>
+
           </div>
-          <!-- START FOOTER -->
-          <div class="launchkit-promo col-xs-12 col-sm-4">
-            <!--           <img src="https://d2kfjaekmjmy1l.cloudfront.net/images/icon-v8d70a510a2c9.png"> -->
-            <!--           <a href="https://launchkit.io/websites/?utm_campaign=Websites%20Footer&amp;utm_medium=referral&amp;utm_source=_Fxe62q3Ono" target="_blank">Website by LaunchKit</a> -->
-            <!--         </div> -->
-            <!--     </div> -->
-            <div id="footer-right">
-              <p>Software Engineering Group - Spring 16</p>
-              <br />
+          <!-- end app store area -->
 
-              <!--    <a href="http://www.facebook.com/pages/" target="_blank" class="social facebook">Fan Us</a> |  -->
+        </div>
+        <!-- end container -->
 
-            </div>
-
-            <a id="top" href="#">Top</a> | <a href="#">Andriod Version</a> | <a href="#">Company Blog</a> | <a href="#">About Us</a> | <a href="#">Contact</a>
-            <br /> Download here....
-            <br />
-
-            <br class="clear" />
-
-          </div>
-
-      </footer>
-      <!-- END FOOTER -->
       </div>
+      <!-- end bottom content -->
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    </div>
-    <script>
-      window.skit = (function() {
-        var objects = {};
-        var modules = {};
 
-        function define(resourcePath, deps, fn) {
-          modules[resourcePath] = {
-            deps: deps,
-            fn: fn
-          };
-        }
+      <!-- START FOOTER -->
+      <div id="footer">
 
-        function load(resourcePath) {
-          if (!(resourcePath in objects)) {
-            if (resourcePath in modules) {
-              var module = modules[resourcePath];
-              var args = [];
-              for (var i = 0; i < module.deps.length; i++) {
-                args.push(load(module.deps[i]));
-              }
-              objects[resourcePath] = module.fn.apply(window, args);
-            } else {
-              objects[resourcePath] = null;
-            }
+        <div class="container">
+
+          <div id="footer-right">
+
+            <a href="http://www.google.com/" target="_blank">Software Engineering Group - Spring 16</a>
+            <br/>
+            <a href="http://www.facebook.com/pages/" target="_blank" class="social facebook">Fan Us</a>
+
+          </div>
+
+          <a id="top" href="#">Top</a> | <a href="#">Andriod Version</a> | <a href="#">Company Blog</a> | <a href="#">About Us</a> | <a href="#">Contact</a>
+          <br/>
+          <br class="clear" />
+
+        </div>
+      </div>
+      <!-- END FOOTER -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<script>
+  window.skit = (function() {
+    var objects = {};
+    var modules = {};
+
+    function define(resourcePath, deps, fn) {
+      modules[resourcePath] = {
+        deps: deps,
+        fn: fn
+      };
+    }
+
+    function load(resourcePath) {
+      if (!(resourcePath in objects)) {
+        if (resourcePath in modules) {
+          var module = modules[resourcePath];
+          var args = [];
+          for (var i = 0; i < module.deps.length; i++) {
+            args.push(load(module.deps[i]));
           }
-          return objects[resourcePath];
+          objects[resourcePath] = module.fn.apply(window, args);
+        } else {
+          objects[resourcePath] = null;
         }
-        return {
-          define: define,
-          modules: modules,
-          env: {
-            "productionAPI": true,
-            "appEngineHost": "https://launchkit-images.appspot.com/",
-            "publicRoot": "public"
-          },
-          load: load
-        };
-      })();
-    </script>
-    <script src="https://d2kfjaekmjmy1l.cloudfront.net/base-v33ec63285c6f.js" data-bundle="base"></script>
-    <script src="https://d2kfjaekmjmy1l.cloudfront.net/websites-v22f9eecb6db4.js" data-bundle="websites"></script>
-    <script>
-      (function() {
-        var netproxy = skit.load("skit.platform.netproxy:js");
-        netproxy.__register__("lk", {
-          "name": "lk",
-          "csrfToken": "wjCP3mC9KpbGEcTNd7ZNYA=="
-        });
+      }
+      return objects[resourcePath];
+    }
+    return {
+      define: define,
+      modules: modules,
+      env: {
+        "productionAPI": true,
+        "appEngineHost": "https://launchkit-images.appspot.com/",
+        "publicRoot": "public"
+      },
+      load: load
+    };
+  })();
+</script>
+<script src="https://d2kfjaekmjmy1l.cloudfront.net/base-v33ec63285c6f.js" data-bundle="base"></script>
+<script src="https://d2kfjaekmjmy1l.cloudfront.net/websites-v22f9eecb6db4.js" data-bundle="websites"></script>
+<script>
+  (function() {
+    var netproxy = skit.load("skit.platform.netproxy:js");
+    netproxy.__register__("lk", {
+      "name": "lk",
+      "csrfToken": "wjCP3mC9KpbGEcTNd7ZNYA=="
+    });
 
-        var ControllerKlass = skit.load("public.websites.__id__.WebsitePublic:js");
-        var controller = new ControllerKlass({
-          "__id__": "_Fxe62q3Ono"
-        });
+    var ControllerKlass = skit.load("public.websites.__id__.WebsitePublic:js");
+    var controller = new ControllerKlass({
+      "__id__": "_Fxe62q3Ono"
+    });
 
-        var controllerProperties = {
-          "website": {
-            "facebookLink": "",
-            "domain": null,
-            "disableLkBranding": false,
-            "termsLink": "",
-            "appName": "Health Tracker",
-            "images": {
-              "screenshots": {
-                "iPhone": [{
-                  "url": "https://lh3.googleusercontent.com/aIUAllMXQfeuTVeVh97mGm-ssAwZ7ejLfAXt4uVNVnYcmAXPuPe0vphMdul0O5HBvtbQdgrXd2GgkKyqZFzUHtiDuobXiA",
-                  "imageId": "MpaY3bgQmuw"
-                }, {
-                  "url": "https://lh3.googleusercontent.com/2WSX8I41-m64cQAsiMQ-zxYhxnjvJhHaxVsh_II-RjakCnvRUdgCgcJlz4_uqphScov0rJ5bgc3qCtDz5dDnw50skNkBoA",
-                  "imageId": "dnK0q4Ih2Fw"
-                }, {
-                  "url": "https://lh3.googleusercontent.com/0ZfC9xJk3qZk8jgBI10D5aDcOhFjxJDJPMTKycwnM-NvajBOCxeiBZs9sMcpIHr9RTVUmQdFcc8v8RPe7r-s3gdLkuoL3Q",
-                  "imageId": "tQhM6D8YXA0"
-                }, {
-                  "url": "https://lh3.googleusercontent.com/spY4p3-W-zEJij6-Zto0a-_0VeSQaGxSTsWTm41tZzcayT6vTUrd0BiJAhCGtgF7QO7XuDuLwk46FuBdSiLirWxytQErjiM",
-                  "imageId": "kN7Uiy_SuAo"
-                }]
-              }
-            },
-            "blogLink": "",
-            "supportLink": "",
-            "longDescription": "",
-            "font": "Open Sans",
-            "playStoreId": "",
-            "isPro": null,
-            "waitingListLink": "",
-            "primaryColor": "#309FF4",
-            "keywords": "health, fitness",
-            "googleAnalyticsId": "",
-            "itunesProviderToken": "",
-            "shortDescription": "Track your health, share with friends...",
-            "id": "_Fxe62q3Ono",
-            "loginLink": "",
-            "privacyLink": "",
-            "itunesCampaignToken": "",
-            "author": "Kevin Morton",
-            "tagline": "Track your health",
-            "frameScreenshots": "white",
-            "customCss": null,
-            "itunesId": "",
-            "pressLink": "",
-            "instagramLink": "",
-            "customLinkLabel": "",
-            "twitterLink": "",
-            "template": "7",
-            "mixpanelBadge": false,
-            "customLink": "",
-            "homeUrl": "/websites/_Fxe62q3Ono"
+    var controllerProperties = {
+      "website": {
+        "facebookLink": "",
+        "domain": null,
+        "disableLkBranding": false,
+        "termsLink": "",
+        "appName": "Health Tracker",
+        "images": {
+          "screenshots": {
+            "iPhone": [{
+              "url": "https://lh3.googleusercontent.com/aIUAllMXQfeuTVeVh97mGm-ssAwZ7ejLfAXt4uVNVnYcmAXPuPe0vphMdul0O5HBvtbQdgrXd2GgkKyqZFzUHtiDuobXiA",
+              "imageId": "MpaY3bgQmuw"
+            }, {
+              "url": "https://lh3.googleusercontent.com/2WSX8I41-m64cQAsiMQ-zxYhxnjvJhHaxVsh_II-RjakCnvRUdgCgcJlz4_uqphScov0rJ5bgc3qCtDz5dDnw50skNkBoA",
+              "imageId": "dnK0q4Ih2Fw"
+            }, {
+              "url": "https://lh3.googleusercontent.com/0ZfC9xJk3qZk8jgBI10D5aDcOhFjxJDJPMTKycwnM-NvajBOCxeiBZs9sMcpIHr9RTVUmQdFcc8v8RPe7r-s3gdLkuoL3Q",
+              "imageId": "tQhM6D8YXA0"
+            }, {
+              "url": "https://lh3.googleusercontent.com/spY4p3-W-zEJij6-Zto0a-_0VeSQaGxSTsWTm41tZzcayT6vTUrd0BiJAhCGtgF7QO7XuDuLwk46FuBdSiLirWxytQErjiM",
+              "imageId": "kN7Uiy_SuAo"
+            }]
           }
-        };
-        for (var k in controllerProperties) {
-          controller[k] = controllerProperties[k];
-        }
+        },
+        "blogLink": "",
+        "supportLink": "",
+        "longDescription": "",
+        "font": "Open Sans",
+        "playStoreId": "",
+        "isPro": null,
+        "waitingListLink": "",
+        "primaryColor": "#309FF4",
+        "keywords": "health, fitness",
+        "googleAnalyticsId": "",
+        "itunesProviderToken": "",
+        "shortDescription": "Track your health, share with friends...",
+        "id": "_Fxe62q3Ono",
+        "loginLink": "",
+        "privacyLink": "",
+        "itunesCampaignToken": "",
+        "author": "Kevin Morton",
+        "tagline": "Track your health",
+        "frameScreenshots": "white",
+        "customCss": null,
+        "itunesId": "",
+        "pressLink": "",
+        "instagramLink": "",
+        "customLinkLabel": "",
+        "twitterLink": "",
+        "template": "7",
+        "mixpanelBadge": false,
+        "customLink": "",
+        "homeUrl": "/websites/_Fxe62q3Ono"
+      }
+    };
+    for (var k in controllerProperties) {
+      controller[k] = controllerProperties[k];
+    }
 
-        window.skit.controller = controller;
-        controller.recursiveLoad();
-        controller.recursiveReady();
-      })();
-    </script>
+    window.skit.controller = controller;
+    controller.recursiveLoad();
+    controller.recursiveReady();
+  })();
+</script>
 </body>
